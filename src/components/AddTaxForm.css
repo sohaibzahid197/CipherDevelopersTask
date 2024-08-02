@@ -1,0 +1,140 @@
+/* AddTaxForm.css */
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group-inline {
+  display: flex;
+  align-items: center;
+}
+
+input[type="text"],
+input[type="number"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+input[type="text"] {
+  flex: 2;
+  margin-right: 10px;
+}
+
+input[type="number"] {
+  flex: 1;
+  margin-right: 5px;
+}
+
+.tax-rate-input span {
+  font-size: 16px;
+}
+
+.items-group {
+  margin-left: 20px;
+  padding-left: 20px;
+  border-left: 2px solid #eee;
+}
+
+.category-label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  background-color: #f8f8f8;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.search-input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.apply-button {
+  padding: 10px 20px;
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 40%;
+  text-align: center;
+  margin-left: 300px;
+  
+}
+
+.apply-button:hover {
+  background-color: #cc5200;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.category-label input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.items-group label input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+form input[type="radio"] {
+  margin-right: 10px;
+}
+
+form input[type="radio"] + label {
+  margin-right: 20px;
+}
+
+@media (max-width: 600px) {
+  form {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .form-group-inline {
+    flex-direction: column;
+  }
+
+  input[type="text"],
+  input[type="number"],
+  .search-input {
+    width: calc(100% - 20px);
+    margin-right: 0;
+  }
+
+  .apply-button {
+    width: 100%;
+  }
+}
